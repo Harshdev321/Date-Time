@@ -1,17 +1,16 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM  from "react-dom";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+
+const name = "Harsh Vardhan Gupta";
+const currDate = new Date().toLocaleDateString();
+const currTime = new Date().toLocaleTimeString();
+ReactDOM.render(
+<>
+ <h1>Hello My Name Is {name}</h1>
+ <p> Current Date Is {currDate}</p>
+ <p> Current Time Is {currTime} </p>,
+</>,
+
+document.getElementById("root"),
 );
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
